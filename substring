@@ -8,29 +8,18 @@ range1 = []
 for l in str_list:
   range1.append(strcount)
   strcount += 1
-print(range1)
 
 range2 = range1[1:strcount]
 range2.append(strcount)
 
-print(range2)
-print(my_str[2:1])
-
 for i in range1:
-  # for j in range(i+1,strcount+1):
   for j in range2:
       if i != j & j>i:
         print(my_str[i:j])
       else:
         pass
 
-    
-# myrange = 0
-# range1 = []
-# for letter in str_list:
-#   myrange += 1
-#   range1.append(myrange)
-# print(range1)
+
 
 
 
