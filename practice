@@ -15,3 +15,16 @@ l = len(list2)
 for i in range(l):
   if i == l-5:
     print(list2[i])
+
+
+# python program to print substrings of a substrings
+
+my_string = 'abcd'
+
+length = len(my_string)
+
+for i in range(length):
+  for j in range(i+1, length+1):
+    print(my_string[i:j])
+    
+    
