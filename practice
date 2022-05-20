@@ -1,0 +1,17 @@
+#print last element of of basestring
+def convertstring(string):
+  list1 = []
+  list1[:0]= string
+  return list1
+
+#driver code
+my_str = "Hello world"
+
+list2 = convertstring(my_str)
+print(list2)
+
+l = len(list2)
+  
+for i in range(l):
+  if i == l-5:
+    print(list2[i])
