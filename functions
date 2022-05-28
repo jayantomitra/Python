@@ -1,0 +1,15 @@
+#prime number
+
+def is_prime(num):
+  not_prime = False
+  for n in range(2,num):
+    if num % n == 0:
+      not_prime = True
+  
+  if not_prime == True:
+    print("% s" % num + " is not a prime number")
+  else:
+    print("% s" % num + " is a Prime number")
+
+#driver code
+is_prime(997)
