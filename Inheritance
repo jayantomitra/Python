@@ -1,0 +1,41 @@
+#Inheritance
+class Mammal(object):
+  
+  def __init__(self):
+    print("Mammal created")
+    
+  def distinguishing_feature(self):
+    print("Mammary gland is present")
+
+class Animal(Mammal):
+
+  def __init__(self):
+    Mammal.__init__(self)
+    print ("Animal created")
+  
+  def whoAmI(self):
+    print("Animal")
+  
+  def sourceofEnergy(self):
+    print("food")
+    
+
+class Dog(Animal):
+  def __init__(self):
+    Animal.__init__(self)
+    print("Dog created")
+    
+  def whoAmI(self):
+    print("Dog")
+  
+  def speak(self):
+    print("woof")
+    
+  
+d = Dog()
+
+d.sourceofEnergy()
+
+d.speak()
+
+d.distinguishing_feature()
