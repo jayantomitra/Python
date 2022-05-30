@@ -1,0 +1,29 @@
+# Objects & Methods practice 
+class Circle():
+  #class object attribute
+  pi = 3.14
+  
+  def __init__(self, radius):
+    self.radius = radius 
+  
+  def area(self):
+    return (self.radius**2) * Circle.pi
+  
+  def set_new_radius(self, new_radius):
+    self.radius = new_radius
+    
+  def get_radius(self):
+    return self.radius
+    
+  def perimeter(self):
+    return (2 * Circle.pi * self.radius)
+    
+#driver code
+c = Circle(radius = 10)
+
+c.set_new_radius(25)
+
+print(c.perimeter())
+
+
+# methods are functions that belong to a class & need to be called as function on an Instance of a class ex. c.perimeter()
