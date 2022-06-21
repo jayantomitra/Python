@@ -1,0 +1,20 @@
+#find highest even number of a list
+
+def highest_even_number(*args):
+  even_list = []
+  for x in args:
+    if x % 2 == 0:
+      even_list.append(x)
+
+  highest_even = 0
+  
+  for num in even_list:
+    for i in even_list:
+      if (num > (i + 1)) and (num > highest_even):
+        highest_even = num
+  print("Highest even is " + str(highest_even))      
+  return(highest_even)
+        
+
+#driver code
+highest_even_number(14,10,2,3,44,8,11) 
