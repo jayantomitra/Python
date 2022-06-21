@@ -18,3 +18,50 @@ def highest_even_number(*args):
 
 #driver code
 highest_even_number(14,10,2,3,44,8,11) 
+
+
+
+# reverse a sentence and swap cases
+
+
+def reverse_words_and_swap_cases(sentence):
+  s = ''
+  
+  words = []
+  word = ''
+
+  
+  for l in sentence:
+    
+    if (l != ' ') :
+      word += l
+
+      
+    elif(l == ' '):
+
+      words.append(word)
+      word = ''
+      words.append(' ')
+    
+  if (word != 0):
+
+    words.append(word)
+  
+  reverse_words = words[::-1]
+  
+  
+  for w in reverse_words:
+    
+    s += w
+  
+  return s.swapcase()
+     
+    
+# driver code
+
+print(reverse_words_and_swap_cases('cODING iS bRILLIANT aND aWESOME'))
+  
+print(reverse_words_and_swap_cases('jAYANTO cODER pYTHON'))  
+  
+  
+  
