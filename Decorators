@@ -16,3 +16,31 @@ hello('Hello Decorators')
 
 
 
+#performance checker
+
+from time import time
+
+def performance(func):
+    def wrap_up(*args, **kwargs):
+        print("******************")
+        start = time()
+        func(*args,**kwargs)
+        end = time()
+        print(f'it took {end-start}ms to complete this task')
+        print("******************")
+    return wrap_up
+
+
+@performance
+def multiples_of(x):
+    multiples_list = []
+    for i in range(1000000):
+        m = i*x
+        multiples_list.append(m)
+    print(multiples_list)
+    return 
+
+
+multiples_of(7)
+
+
