@@ -67,3 +67,12 @@ s.split('ello')
 s.split('I')
 
 ['hello ', ' am kenny']
+
+
+
+#Print Formatting
+
+x = "My String"
+print('Place my string here : %s' %(x))
+>> Place my string here : My String
+
