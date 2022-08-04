@@ -1,0 +1,69 @@
+# how will you reverse a string?
+s = "hello I am kenny"
+s[::-1]
+>>? 
+
+# insert newline?
+# \n  newline character
+print("python is awesome \n I love Python")
+
+len('python is awesome \n I love Python')
+#spaces are also counted as characters in python
+
+# string slicing in python
+
+# [x:y] ':'=> means onwards 
+# x => from index position
+# y => to index position
+
+s[0:6]
+>> Hello
+
+
+#Concatenate 2 strings
+c = "trying to concatenate"
+t = "add me"
+c + t 
+
+
+s = "hello, I am kenny"
+>> 'hello, I am kenny'
+
+
+s.upper()
+'HELLO I AM KENNY'
+#s will remain the same no matter which function is run on it until it is reinitialized
+
+s = s.upper()
+print(s)
+
+s.partition('k')
+>> ('hello I am ', 'k', 'enny')
+
+
+s.split()
+['hello', 'I', 'am', 'kenny']
+
+#count is case sensitive
+s.count('E') 
+>> 0
+
+s.count('e')
+>> 2
+
+s.find('I')
+>> 6
+
+#decorate / brint to center
+#eex. make it 24 characters long preceed & succeeded by another character(' ' or 'z')
+
+s.center(24, 'z')
+
+s.center(24, ' ')
+
+s.split('ello')
+
+#split at a point
+s.split('I')
+
+['hello ', ' am kenny']
