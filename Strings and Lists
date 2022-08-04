@@ -76,3 +76,10 @@ x = "My String"
 print('Place my string here : %s' %(x))
 >> Place my string here : My String
 
+x = "My String"
+print('Place my string here : %s' %(x))
+>>  Place my string here : 11.99
+
+
+#Multiple formatting
+print("here is a string with multiple formatting :{a} & {b} ".format(a='coding in python is Fun', b = 'and Interesting'))
