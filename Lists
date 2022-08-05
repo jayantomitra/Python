@@ -1,0 +1,10 @@
+MY_LIST = ['i', 'HAVE', 'A','Random','list']
+MY_LIST.append(['Add item'])
+
+#>> ['i', 'HAVE', 'A', 'random', 'list', ['Add item']]
+MY_LIST.pop(-2)
+>>['i', 'HAVE', 'A', 'random', ['Add item']]
+
+Rev_list = [1,2,3,4,5]
+Rev_list.reverse()
+>>
