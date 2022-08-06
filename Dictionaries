@@ -1,0 +1,60 @@
+my_dict = {"key1":"value1","key2":"value2","key3":"value3" }
+
+# find the 1st key: value pair from my_dict
+
+my_dict['key1']
+>>  value1
+
+# can take flexible type of values
+
+flex_dict={'k1': 'v1', 'k2':12, 'k3':'anystring', 'k5': 4.5}
+print(flex_dict.keys())
+print(flex_dict.values())
+
+flex_dict['k3'][::-1]
+>> gnirtsyna
+
+flex_dict['k5'] += 10
+flex_dict
+>> {'k1': 'v1', 'k2': 12, 'k3': 'anystring', 'k5': 14.5}
+
+
+flex_dict={'k1': 'v1', 'k2':12, 'k3':'anystring', 'k5': 4.5}
+print(flex_dict.keys())
+print(flex_dict.values())
+
+>>  output:
+
+dict_keys(['k1', 'k2', 'k3', 'k5'])
+dict_values(['v1', 12, 'anystring', 4.5])
+
+#how will you create a nested dictionary ?
+nested_dict = {'nesterkey1' : {'k1': 'v1', 'k2': 2, 'k3':{'keys1 ': "idkstring", 'keys2' : "keysstring2"}, 'k5': [14.5, 15.5,16.5]}}
+nested_dict['nesterkey1']['k5'][2]
+>> 16.5
+
+
+nested_dict['nesterkey1']['k3']['keys2']
+>> 'keysstring2'
+
+#  Advanced Data Structures
+# similer to list comprehension we can have dictionary comprehensions
+# syntax = >  {x: x**y for x in range(z)}
+# explanation {key x : (expression for value of x) for x in range (z)}
+
+square_dict  = {x:(x**2) for x in range(10)}
+print(square_dict)
+>> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+more = {x:x**2 for x in range(10,20)}
+
+#how will you add 1 dictionary into another ?
+square_dict.update(more)
+print(square_dict)
+>> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225, 16: 256, 17: 289, 18: 324, 19: 361}
+
+square_dict.get(19)
+>> 361
+
+square_dict.pop(18)
+>> {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100, 11: 121, 12: 144, 13: 169, 14: 196, 15: 225, 16: 256, 17: 289, 19: 361}
