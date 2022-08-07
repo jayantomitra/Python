@@ -1,0 +1,23 @@
+# What are sets ?
+# sets are unordered collection of unique elements
+
+r_list = ['a', 'b', 'b', 'n', 'm','p','n' ]
+r = set(r_list)
+
+print(r)
+>> {'a', 'b', 'm', 'n', 'p'}
+x = set()
+x.add(15)
+print(x)
+>> {15}
+x.add(15,16)
+print(x)
+>> {15, 16}
+
+# sets can be considered as a dictionary but with Only Unique KEYS  & without values
+# Q ) if you have a list of repeating items , how will you create a data structure of non repeating unique items from that?
+#ans => We Can Use a SET for that.
+
+list1 = [1,1,2,2,2,4,3,4,3,3,5,5,5,6]
+set(list1) 
+>> {1, 2, 3, 4, 5, 6}
