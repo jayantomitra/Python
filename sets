@@ -33,5 +33,23 @@ print(y)
 x={15, 16, 17, 18, 5,6}
 
 print(x.intersection(y))
-
 >> {5, 6}
+
+z = {4,5}
+x.update(z) # (z) has to be a set itself 
+
+print(x.difference(y))
+
+
+
+# whats the difference between sets & tuple? 
+similarity = both do not support item reassignment
+#lot of difference!! sets contain only unique elements while tuples are not concerned with uniqueness only concerned with immutability
+tup = (1,2,3,4,5,5,6,6,7,7,7)
+tup[0] = 2
+
+#>> TypeError                                 
+#Traceback (most recent call last)
+#Input In [14], in <cell line: 1>()
+#----> 1 tup[0] = 2
+#TypeError: 'tuple' object does not support item assignment
